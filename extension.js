@@ -26,14 +26,14 @@
 
         // Example code for a bot command:
         bot.commands.baconCommand = {
-          command: 'bacon',  // The command to be called. With the standard command literal this would be: !bacon
+          command: 'woodchuck',  // The command to be called. With the standard command literal this would be: !bacon
           rank: 'user', // Minimum user permission to use the command
           type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Bacon!!!");
+              API.sendChat("/me How much would could a would chuck chuck if a wood chuck could chuck wood?");
             }
           }
         };
@@ -70,7 +70,7 @@
       maximumCycletime: 10,
       voteSkip: true,
       voteSkipLimit: 5,
-      historySkip: false,
+      historySkip: true,
       timeGuard: true,
       maximumSongLength: 5,
       autodisable: true,
@@ -89,7 +89,7 @@
       afkpositionCheck: 15,
       afkRankCheck: "ambassador",
       motdEnabled: true,
-      motdInterval: 5,
+      motdInterval: 3,
       motd: "Check out the owners youtube: https://www.youtube.com/channel/UCbpZ1odLqFJoqvvCuLUCdlA",
       filterChat: true,
       etaRestriction: false,
@@ -102,8 +102,8 @@
       website: null,
       intervalMessages: [],
       messageInterval: 5,
-      songstats: true,
-      commandLiteral: "!",
+      songstats: false,
+      commandLiteral: "/",
       blacklists: {
         NSFW: "https://rawgit.com/squrch/custom/master/blacklists/NSFWlist.json",
         OP: "https://rawgit.com/squrch/custom/master/blacklists/OPlist.json",
