@@ -90,7 +90,7 @@
       afkRankCheck: "ambassador",
       motdEnabled: false,
       motdInterval: 5,
-      motd: "Welcome to K9, we hope you enjoy your time here!",
+      motd: "MOTD",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
