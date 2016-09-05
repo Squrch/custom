@@ -103,7 +103,7 @@
       intervalMessages: [],
       messageInterval: 5,
       songstats: false,
-      commandLiteral: "/",
+      commandLiteral: "!",
       blacklists: {
         NSFW: "https://rawgit.com/squrch/custom/master/blacklists/NSFWlist.json",
         OP: "https://rawgit.com/squrch/custom/master/blacklists/OPlist.json",
