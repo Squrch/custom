@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "K9x";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -51,14 +51,14 @@
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
+      startupCap: 200, // 1-200
       startupVolume: 0, // 0-100
       startupEmoji: false, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
-      maximumAfk: 120,
+      maximumAfk: 30,
       afkRemoval: true,
       maximumDc: 60,
       bouncerPlus: true,
@@ -72,25 +72,25 @@
       voteSkipLimit: 10,
       historySkip: false,
       timeGuard: true,
-      maximumSongLength: 10,
+      maximumSongLength: 5,
       autodisable: true,
       commandCooldown: 30,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
-      ["theme", "This song does not fit the room theme. "],
-      ["op", "This song is on the OP list. "],
-      ["history", "This song is in the history. "],
-      ["mix", "You played a mix, which is against the rules. "],
-      ["sound", "The song you played had bad sound quality or no sound. "],
-      ["nsfw", "The song you contained was NSFW (image or sound). "],
-      ["unavailable", "The song you played was not available for some users. "]
-      ],
+        ["ban", "Another song like this and a ban will be made. "],
+        ["warn", "This is a warning to not play songs like this. "],
+        ["history", "This song is in the history. "],
+        ["inappropriate", "This song is not appropriate. "],
+        ["sound", "The song you played had bad sound quality or no sound. "],
+        ["error", "A known or uknown error has occured. Your song has been skipped. "],
+        ["unavailable", "The song you played was not available for some / all users. "]
+            ],
       afkpositionCheck: 15,
       afkRankCheck: "ambassador",
       motdEnabled: false,
       motdInterval: 5,
-      motd: "Temporary Message of the Day",
+      motd: "MOTD",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
