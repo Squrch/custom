@@ -58,7 +58,7 @@
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
-      maximumAfk: 30,
+      maximumAfk: 90,
       afkRemoval: true,
       maximumDc: 60,
       bouncerPlus: true,
@@ -85,12 +85,13 @@
         ["sound", "The song you played had bad sound quality or no sound. "],
         ["error", "A known or uknown error has occured. Your song has been skipped. "],
         ["unavailable", "The song you played was not available for some / all users. "]
+          ["bad", "The song you have played it terrible, it has been skipped. "]
             ],
       afkpositionCheck: 15,
       afkRankCheck: "ambassador",
       motdEnabled: true,
       motdInterval: 3,
-      motd: "Check out the owners youtube: https://www.youtube.com/channel/UCbpZ1odLqFJoqvvCuLUCdlA",
+      motd: "Check out the owners youtube: https://www.youtube.com/c/squrch",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
